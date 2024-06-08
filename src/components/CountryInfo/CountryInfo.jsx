@@ -24,7 +24,7 @@ population}) => {
         </p>
 
         <p className={styles.details}>
-          Languages:{' '}
+          Languages:
           <span className={styles.accent}>{languages.join(", ")}</span>
         </p>
       </div>

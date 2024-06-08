@@ -14,7 +14,6 @@ export const Home = () => {
       try {
         const data = await getCountries();
         setCountries(data);
-        console.log('data: ', data);
       } catch (error) {
         setErrorMessage(error.message);
       } finally {

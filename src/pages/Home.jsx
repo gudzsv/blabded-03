@@ -1,4 +1,4 @@
-import { Container, CountryList, Loader, Section } from 'components';
+import { Container, CountryList, Heading, Loader, Section } from 'components';
 import { useEffect, useState } from 'react';
 import { getCountries } from 'service/countryApi';
 
@@ -27,7 +27,7 @@ export const Home = () => {
       <Container>
         {countries && <CountryList countries={countries} />}
         {isLoading && <Loader />}
-        {errorMessage && <div>{errorMessage}</div>}
+        {errorMessage && <Heading title={errorMessage}></Heading>}
       </Container>
     </Section>
   );

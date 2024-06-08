@@ -1,3 +1,10 @@
+import { ClipLoader } from 'react-spinners';
+import style from './Loader.module.css';
+
 export const Loader = () => {
-  return <h2>Loader</h2>;
+  return (
+    <div className={style.backdrop}>
+      <ClipLoader color="#36d7b7" />
+    </div>
+  );
 };
